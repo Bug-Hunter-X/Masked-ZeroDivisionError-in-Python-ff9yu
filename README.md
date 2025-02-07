@@ -1,0 +1,3 @@
+# Masked ZeroDivisionError in Python
+This example showcases a subtle error where a ZeroDivisionError is masked in Python due to conditional logic.  The function `function_with_uncommon_error` checks for zero values in both inputs before performing division. However, if both 'a' and 'b' are zero, it still proceeds to execute the division resulting in an error, which is then not caught in the code.
+The improved version handles this case explicitly to prevent this issue. This scenario can be easily missed during code review and might result in unexpected behavior at runtime.
